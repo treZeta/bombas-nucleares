@@ -104,7 +104,6 @@
     height: 70vh;
     width: 100%;
     color: #ffffff;
-    background: #183153;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -142,13 +141,19 @@
 .icon-container i{
     font-size: 240px;
 }
-#section2{
+#section-1{
+    background: #183153;
+}
+#section-2{
     background: #ee6f57;
 }
-#section3{
+#section-3{
     background: #f6f5f5;
     color: #000; 
 }
-#section3 .section-content p{
+#section-3 .section-content p{
     color: #333;
+}
+#section-4{
+    background: #f5a25d;
 }
