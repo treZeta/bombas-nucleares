@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700;800&display=swap');
+/* Elimina los estilos predefinidos mas importantes */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Se le dan las propiedades a todo el nav */
+
+#nav-bar {
+    background: #222831;
+    display: flex;
+    padding: 30px 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Se le da display flex para que los hijos (los li) sean flexibles */
+
+#nav-bar__ul {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+#nav-bar-logo img {
+    width: 100%;
+}
+#nav-bar-logo {
+    position: relative;
+    /* bottom: 10px; */
+    display: flex;
+    height: 80%;
+    width: 50px;
+    margin: 0 30px;
+}
+
+.nav-bar__li {
+    display: inline-block;
+    position: relative;
+    padding: 7px;
+    margin: 0 30px;
+}
+
+.nav-bar__li a {
+    transition: all 0.6s;
+    color: #8dd2b4;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.nav-bar__li i {
+    color: #8dd2b4;
+    box-sizing: border-box;
+    margin-left: 5px;
+    position: relative;
+    bottom: 2px;
+}
+
+.nav-bar__li:last-child i {
+    clear: right;
+    font-size: 40px;
+}
+
+.sub-menu {
+    display: block;
+}
+
+.nav-bar__li:hover>a {
+    color: #fff;
+}
+
+/* Style the subnav content - positioned absolute */
+
+.submenus-container {
+    display: none;
+    position: absolute;
+    background-color: #222831;
+    width: 150px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Al poner el mause sobre el .li-with-subnav, se muestra el sub menu */
+
+.div-with-subnav:hover .submenus-container {
+    display: block;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.disabled a:hover {
+    color: #8dd2b4;
+}
+
+.section {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    color: #ffffff;
+    background: #183153;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section-content{
+    margin: auto;
+    max-width: 980px;
+    min-width: 700px;
+    display: flex;
+}
+.section-text-container{
+    display: inline-block;
+    font-weight: 700;
+    width: 66%;
+    float: left;
+}
+
+.section-text-container h2{
+    font-weight: 800;
+}
+.section-text-container h3{
+    font-weight: 500;
+}
+.section-text-container p{
+    font-weight: 300;
+    color: #efefef;
+}
+.section-text-container h2, h3, p{
+    margin: 10px;
+} 
+.icon-container{
+    float: left;
+    width: 33%;
+    margin-left: 10px;
+}
+.icon-container i{
+    font-size: 240px;
+}
+#section2{
+    background: #ee6f57;
+}
+#section3{
+    background: #f6f5f5;
+    color: #000; 
+}
+#section3 .section-content p{
+    color: #333;
+}
