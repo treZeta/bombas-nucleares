@@ -29,6 +29,7 @@
 #nav-bar-logo img {
     width: 100%;
 }
+
 #nav-bar-logo {
     position: relative;
     /* bottom: 10px; */
@@ -107,53 +108,70 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.section-content{
+
+.section-content {
     margin: auto;
     max-width: 980px;
     min-width: 700px;
     display: flex;
 }
-.section-text-container{
+
+.section-text-container {
     display: inline-block;
     font-weight: 700;
     width: 66%;
     float: left;
 }
 
-.section-text-container h2{
+.section-text-container h2 {
     font-weight: 800;
 }
-.section-text-container h3{
+
+.section-text-container h3 {
     font-weight: 500;
 }
-.section-text-container p{
+
+.section-text-container p {
     font-weight: 300;
     color: #efefef;
 }
-.section-text-container h2, h3, p{
+
+.section-text-container h2, h3, p {
     margin: 10px;
-} 
-.icon-container{
+}
+
+.icon-container {
     float: left;
     width: 33%;
     margin-left: 10px;
 }
-.icon-container i{
+
+.icon-container i {
     font-size: 240px;
 }
-#section-1{
+
+#section-1 {
     background: #183153;
 }
-#section-2{
+
+#section-2 {
     background: #ee6f57;
 }
-#section-3{
+
+#section-3 {
     background: #f6f5f5;
-    color: #000; 
+    color: #000;
 }
-#section-3 .section-content p{
+
+#section-3 .section-text-container p, #section-5 .section-text-container p{
     color: #333;
 }
-#section-4{
+
+#section-4 {
     background: #f5a25d;
+}
+
+#section-5 {
+    background: #9ddfd3;
+    color: #000000;
 }
