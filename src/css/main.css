@@ -501,12 +501,16 @@ a {
 /* The actual content */
 
 .content {
+    transition: all 1s;
+    opacity: .4;
     padding: 20px 30px;
-    background-color: white;
+    background-color: #ffffff;
     position: relative;
     border-radius: 6px;
 }
-
+.content:hover {
+    opacity: 1;
+}
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
@@ -523,7 +527,7 @@ a {
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
         left: 60px;
-        border: medium solid white;
+        border: medium solid #ffffff;
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
     }
