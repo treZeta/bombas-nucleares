@@ -110,6 +110,9 @@ a {
 .disabled {
     cursor: not-allowed;
 }
+.disabled:hover>a {
+    color: #333333;
+}
 
 .section {
     display: flex;
