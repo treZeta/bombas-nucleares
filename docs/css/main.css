@@ -8,12 +8,14 @@
     box-sizing: border-box;
 }
 
+/* Le quita el text decoration y le da color negro a todos los <a> */
+
 a {
     text-decoration: none;
     color: #000000;
 }
 
-/* Se le dan las propiedades a todo el nav */
+/* Se le dan las propiedades al nav-bar */
 
 #nav-bar {
     background: transparent;
@@ -24,7 +26,8 @@ a {
     z-index: 100;
 }
 
-/* Se le da display flex para que los hijos (los li) sean flexibles */
+/* Se le da display flex a la ul de el nav-bar para que los li sean flexibles, margin auto
+para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
 
 #nav-bar__ul {
     display: flex;
@@ -32,9 +35,7 @@ a {
     width: 100%;
 }
 
-#nav-bar-logo img {
-    width: 100%;
-}
+/* Se le dan propiedades al div contenedor del logo de la nav-bar */
 
 #nav-bar-logo {
     position: relative;
@@ -45,12 +46,22 @@ a {
     margin: 0 30px;
 }
 
+/* Se le da un width de 100 % al logo para que ocupe todo el espacio de su caja contenedora*/
+
+#nav-bar-logo img {
+    width: 100%;
+}
+
+/* Se le dan las propiedades a los li de la ul de el nav-bar, la position: relative es para que no haya problema con el sub-menu */
+
 .nav-bar__li {
     display: inline-block;
     position: relative;
     padding: 7px;
     margin: 0 30px;
 }
+
+/* Se le dan las propiedades a las anclas, el transition para que el hover sea suave  */
 
 .nav-bar__li a {
     transition: all 0.6s;
@@ -60,23 +71,22 @@ a {
     padding: 10px 0;
 }
 
+/* Se le da un color blanco a el texto de los submenus de el li "bombas" */
+
 .submenus-container .nav-bar__li a {
     color: #ffffff;
 }
 
+/* Se le dan propiedades a los <i> (los iconos), estas propiedades son las mismas que les de los <a> de los li*/
+
 .nav-bar__li i {
     transition: all .6s;
     color: #333;
-    box-sizing: border-box;
     margin-left: 5px;
     position: relative;
     bottom: 2px;
 }
 
-.nav-bar__li:last-child i {
-    clear: right;
-    font-size: 40px;
-}
 
 .sub-menu {
     display: block;
@@ -110,25 +120,21 @@ a {
 .disabled {
     cursor: not-allowed;
 }
+
 .disabled:hover>a {
     color: #333333;
 }
 
 .section {
     display: flex;
-    height: 85vh;
-    min-height: 85vh;
-    max-height: 85vh;
     width: 100%;
     color: #ffffff;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0;
 }
 
 .section-content {
     margin: auto;
     max-width: 980px;
-    min-width: 700px;
     display: flex;
 }
 
@@ -140,41 +146,27 @@ a {
 
 .section-text-container h2 {
     font-weight: 800;
+    font-size: 36px;
 }
 
 .section-text-container h3 {
     font-weight: 500;
     text-align: justify;
+    font-size: 18px;
 }
 
 .section-text-container p {
     font-weight: 300;
-    color: #efefef;
+    color: #dedede;
+    font-size: 15px;
     text-align: justify;
-}
-
-.button {
-    background: transparent;
-    color: #ffffff;
-    font-size: 18px;
-    text-decoration: none;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    margin: 0 50vh;
-    padding: 10px;
-    text-align: center;
-    transition: all .4s;
-}
-
-.button:hover {
-    background: #ffffff;
-    color: #000;
 }
 
 #section-1 .section-text-container {
     display: inline-block;
     font-weight: 700;
-    width: 90%;
+    width: 100%;
+    padding: 30px 0;
 }
 
 #section-1 .section-content {
@@ -373,6 +365,7 @@ a {
 .content h4 {
     font-size: 22px;
 }
+
 .content p {
     font-size: 18px;
 }
@@ -510,9 +503,11 @@ a {
     position: relative;
     border-radius: 6px;
 }
+
 .content:hover {
     opacity: 1;
 }
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
@@ -531,7 +526,7 @@ a {
         left: 60px;
         border: medium solid #ffffff;
         border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
+        border-color: transparent #ffffff transparent transparent;
     }
     /* Make sure all circles are at the same spot */
     .left::after, .right::after {
@@ -540,5 +535,37 @@ a {
     /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-content {
+        display: block;
+    }
+    .section-text-container h2, .section-text-container h3, .section-content p {
+        display: block;
+    }
+    .icon-container {
+        padding: 30px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section-text-container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #section-5 i {
+        font-size: 180px;
+    }
+    #nav-bar, .nav-bar__li, #nav-bar__ul {
+        display: block;
+    }
+    .nav-bar__li {
+        text-align: center;
+        padding: 15px;
+    }
+    #nav-bar-logo {
+        margin: 15px auto;
     }
 }
