@@ -588,5 +588,10 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
         color: #ffffff;
         font-size: 17px;
     }
+    .submenus-container{
+        left: 32%;
+        z-index: 100;
+        background: #000000aa;
+    }
     
 }
