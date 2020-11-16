@@ -507,6 +507,9 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
 .content:hover {
     opacity: 1;
 }
+.content:active {
+    opacity: 1;
+}
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
