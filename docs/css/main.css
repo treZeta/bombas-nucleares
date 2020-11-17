@@ -8,13 +8,6 @@
     box-sizing: border-box;
 }
 
-/* Le quita el text decoration y le da color negro a todos los <a> */
-
-a {
-    text-decoration: none;
-    color: #000000;
-}
-
 /* Se le dan las propiedades al nav-bar */
 
 #nav-bar {
@@ -147,25 +140,43 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
 .section-text-container h2 {
     font-weight: 800;
     font-size: 36px;
-    text-align: center;
 }
 
 .section-text-container h3 {
     font-weight: 500;
-    text-align: justify;
     font-size: 18px;
-    text-align: center;
 }
 
 .section-text-container p {
     font-weight: 500;
     color: #ffffff;
     font-size: 15px;
-    text-align: justify;
+}
+
+.button{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background: transparent;
+    text-decoration: none;
+    transition: all .6s;
+}
+.button:hover{
+    color: #000000;
+    background: #ffffffee;
+}
+.button:active{
+    color: #000000;
+    background: #ffffffee;
 }
 
 #section-1 .section-text-container {
     display: inline-block;
+    text-align: center;
     font-weight: 700;
     width: 100%;
     padding: 30px 0;
@@ -185,14 +196,17 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
 
 #section-1 .section-text-container h2 {
     font-size: 40px;
+    text-align: center;
 }
 
 #section-1 .section-text-container h3 {
     font-size: 25px;
+    text-align: center;
 }
 
 #section-1 .section-text-container p {
     font-size: 18px;
+    text-align: justify;
 }
 
 .section-text-container h2, .section-text-container h3, .section-text-container p {
@@ -250,6 +264,10 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+}
+.timeline a{
+    text-decoration: none;
+    color: #000000;
 }
 
 .timeline-title {
