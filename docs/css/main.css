@@ -6,6 +6,7 @@
     margin: 0;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background: #f6f5f5;
@@ -19,10 +20,13 @@ hr {
     background: #333333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
-.hr-container{
-    
+a{
+    font-weight: 800;
+    color: #ffffff;
 }
-
+a:hover{
+    color: #ffffffbb;
+}
 /* Se le dan las propiedades al nav-bar */
 
 #nav-bar {
@@ -196,6 +200,7 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
     display: inline-block;
     color: #ffffff;
     font-size: 18px;
+    font-weight: 500;
     padding: 10px 20px;
     text-align: center;
     border: 2px solid #ffffff;
