@@ -342,6 +342,15 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
     text-decoration: none;
     color: #000000;
 }
+.content h3{
+    font-weight: 700;
+}
+.content h4{
+    font-weight: 600;
+}
+.content p{
+    font-weight: 400;
+}
 
 .timeline-title {
     text-align: center;
