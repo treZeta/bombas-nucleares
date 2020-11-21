@@ -314,12 +314,22 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
     background: #f6f5f5;
 }
 #section-4 .section-text-container{
+    width: 100%;
+}
+#section-4 .section-text-container{
     color: #000000;
 }
 #section-4 .media-container i {
     color: #000000;
 }
+#section-4 .section-text-container h2{
+    font-size: 28px;
+    text-align: start;
+}
 #section-4 .section-text-container p{
+    color: #000000;
+}
+#section-4 .section-text-container a{
     color: #000000;
 }
 
