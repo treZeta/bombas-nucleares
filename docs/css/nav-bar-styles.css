@@ -1,0 +1,139 @@
+#nav-bar {
+    background: transparent;
+    /* background: #222831; */
+    display: flex;
+    padding: 30px 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Se le da display flex a la ul de el nav-bar para que los li sean flexibles, margin auto
+para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
+
+#nav-bar__ul {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+/* Se le dan propiedades al div contenedor del logo de la nav-bar */
+
+#nav-bar-logo {
+    position: relative;
+    /* bottom: 10px; */
+    display: flex;
+    height: 80%;
+    width: 50px;
+    margin: 0 30px;
+}
+
+/* Se le da un width de 100 % al logo para que ocupe todo el espacio de su caja contenedora*/
+
+#nav-bar-logo img {
+    width: 100%;
+}
+
+/* Se le dan las propiedades a los li de la ul de el nav-bar, la position: relative es para que no haya problema con el sub-menu */
+
+.nav-bar__li {
+    display: inline-block;
+    position: relative;
+    padding: 7px;
+    margin: 0 30px;
+}
+
+/* Se le dan las propiedades a las anclas, el transition para que el hover sea suave  */
+
+.nav-bar__li a {
+    transition: all .2s;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+/* Se le da un color blanco a el texto de los submenus de el li "bombas" */
+
+.submenus-container .nav-bar__li a {
+    color: #ffffff;
+}
+
+/* Se le dan propiedades a los <i> (los iconos), estas propiedades son las mismas que les de los <a> de los li*/
+
+.nav-bar__li i {
+    transition: all .2s;
+    color: #333;
+    margin-left: 5px;
+    position: relative;
+}
+.disabled {
+    cursor: not-allowed;
+}
+
+.disabled:hover>a {
+    color: #333333;
+}
+.sub-menu {
+    display: block;
+}
+
+.nav-bar__li:hover>a, .nav-bar__li:hover>i {
+    color: #ffffff;
+}
+.nav-bar__li:hover>i{
+    transform: rotate(180deg);
+}
+
+.submenus-container .nav-bar__li:hover>a {
+    color: #333333;
+}
+
+/* Style the subnav content - positioned absolute */
+
+.submenus-container {
+    display: none;
+    position: absolute;
+    background: #00000088;
+    width: 150px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Al poner el mause sobre el .li-with-subnav, se muestra el sub menu */
+
+.div-with-subnav:hover .submenus-container, .div-with-subnav:hover>a {
+    display: block;
+}
+@media (max-width: 700px){
+    .submenus-container{
+        left: 38%;
+        z-index: 100;
+        background: #000000aa;
+    }
+    #nav-bar, .nav-bar__li, #nav-bar__ul {
+        display: block;
+    }
+    .nav-bar__li {
+        text-align: center;
+        padding: 15px;
+    }
+    #nav-bar-logo {
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 600px){
+    .submenus-container{
+        left: 36%;
+    }
+}
+@media (max-width: 500px){
+    .submenus-container{
+        left: 33%;
+    }
+}
+@media (max-width: 400px){
+    .submenus-container{
+        left: 28%;
+    }
+}

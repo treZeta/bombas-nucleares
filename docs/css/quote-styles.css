@@ -1,0 +1,20 @@
+.quote-section{
+    background: #222831;
+    padding: 150px 0;
+}
+.quote-section .section-text-container{
+    width: 85%;
+    margin: auto;
+    background: #2e3744;
+    border: #222831;
+    border-radius: 8px;
+}
+.quote-section .section-text-container p{
+    font-size: 23px;
+}
+.quote-section .section-text-container h4{
+    float: right;
+    font-size: 18px;
+    margin: 15px;
+    margin-right: 6.5%;
+}

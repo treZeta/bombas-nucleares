@@ -1,0 +1,19 @@
+/* Se añaden los estilos para los botones */
+.button{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background: transparent;
+    text-decoration: none;
+    transition: all .6s;
+}
+/* Se añade el hover de los botones */
+.button:hover{
+    color: #000000;
+    background: #ffffffee;
+}

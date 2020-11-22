@@ -1,0 +1,127 @@
+#section-hero .section-text-container {
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    padding: 30px 0;
+}
+
+#section-hero .section-text-container {
+    margin: auto;
+}
+
+#section-hero .section-content {
+    height: 100%;
+}
+
+#section-hero .section-content .section-text-container {
+    height: 100%;
+}
+
+#section-hero .section-text-container h2, #section-hero .section-text-container h3, #section-hero .section-text-container p {
+    margin: 35px 0;
+}
+
+#section-hero .section-text-container h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#section-hero .section-text-container h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#section-hero .section-text-container p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#section-2-index {
+    background: #ee6f57;
+    padding: 50px 0;
+}
+
+#section-3-index {
+    background: #f6f5f5;
+    color: #000;
+}
+
+#section-3-index .section-text-container p, #section-5-index .section-text-container p {
+    color: #333333;
+}
+
+#section-3-index .section-text-container a {
+    color: #000000;
+}
+
+#section-3-index .section-text-container a:hover {
+    color: #777777;
+}
+
+#section-4-index {
+    background: #f6f5f5;
+}
+
+#section-4-index .section-text-container {
+    width: 100%;
+}
+
+#section-4-index .section-text-container {
+    color: #000000;
+}
+
+#section-4-index .media-container i {
+    color: #000000;
+}
+
+#section-4-index .section-text-container h2 {
+    font-size: 28px;
+    text-align: start;
+}
+
+#section-4-index .section-text-container p {
+    color: #000000;
+}
+
+#section-4-index .section-text-container a {
+    color: #000000;
+}
+
+#section-5-index {
+    background: #283b4e;
+    color: #ffffff;
+}
+
+#section-5-index .section-text-container p {
+    color: #ffffff;
+}
+
+@media (max-width: 700px) {
+    #section-5-index i {
+        font-size: 180px;
+    }
+    #section-2-index .section-text-container p {
+        width: 90%;
+        text-align: justify;
+        margin: 30px 15px;
+    }
+    #section-hero .section-text-container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #section-hero .section-text-container h2 {
+        margin: 35px;
+    }
+    #section-hero .section-text-container h3 {
+        margin: 35px;
+        font-size: 20px;
+    }
+    #section-hero .section-text-container p {
+        color: #ffffff;
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 17px;
+    }
+}
