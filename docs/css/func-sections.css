@@ -1,5 +1,5 @@
 #hero-func {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_gadget_in_the_Trinity_Test_Site_tower_%281945%29.jpg/795px-The_gadget_in_the_Trinity_Test_Site_tower_%281945%29.jpg');
+    background: url('../img/trinity_bomb.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -48,12 +48,14 @@
     text-align: justify;
 }
 
-.media-container.image-container{
+.media-container.image-container {
     width: 50%;
 }
-.section-text-container.section-with-image{
+
+.section-text-container.section-with-image {
     width: 50%;
 }
+
 #section-2-func {
     background: #ee6f57;
     background: #283b4e;
@@ -64,10 +66,12 @@
     background: #ee6f57;
     color: #ffffff;
 }
-#section-3-func .section-text-container{
+
+#section-3-func .section-text-container {
     width: 100%;
 }
-#section-3-func .section-text-container h2{
+
+#section-3-func .section-text-container h2 {
     text-align: justify;
 }
 
@@ -82,6 +86,23 @@
 
 #section-5-func .section-text-container p {
     color: #ffffff;
+}
+
+#section-6-func .section-text-container {
+    width: 100%;
+}
+
+#section-6-func .section-text-container h2,
+#section-6-func .section-text-container h3,
+#section-6-func .section-text-container p,
+#section-7-func .section-text-container h2,
+#section-7-func .section-text-container h3,
+#section-7-func .section-text-container a,
+#section-7-func .section-text-container p {
+    color: #000000;
+}
+#section-8-func{
+    background: #283b4e;
 }
 
 @media (max-width: 700px) {
@@ -111,13 +132,13 @@
         margin-right: 10px;
         font-size: 17px;
     }
-    .media-container.image-container{
+    .media-container.image-container {
         width: 85%;
     }
-    .section-text-container h2{
+    .section-text-container h2 {
         text-align: center;
     }
-    #section-3-func .section-text-container h2{
+    #section-3-func .section-text-container h2 {
         text-align: start;
     }
 }

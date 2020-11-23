@@ -1,5 +1,5 @@
 #hero-index {
-    background: url("https://upload.wikimedia.org/wikipedia/commons/0/09/Operation_Crossroads_Baker_Edit.jpg");
+    background: url('../img/operation_crossroads_baker.jpg');
     background-position: center;
     background-size: cover;
 }
