@@ -46,7 +46,7 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
 
 .nav-bar__li a {
     transition: all .2s;
-    color: #333;
+    color: #333333;
     font-weight: 600;
     text-decoration: none;
     padding: 10px 0;
@@ -62,15 +62,14 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
 
 .nav-bar__li i {
     transition: all .2s;
-    color: #333;
+    color: #333333;
     margin-left: 5px;
     position: relative;
 }
 .disabled {
     cursor: not-allowed;
 }
-
-.disabled:hover>a {
+.nav-bar__li.disabled:hover>a {
     color: #333333;
 }
 .sub-menu {
