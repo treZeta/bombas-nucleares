@@ -91,6 +91,13 @@
 #section-6-func .section-text-container {
     width: 100%;
 }
+#section-6-func .section-text-container h2{
+    text-align: justify;
+}
+
+#section-7-func .section-text-container h2{
+    text-align: center;
+}
 
 #section-6-func .section-text-container h2,
 #section-6-func .section-text-container h3,
