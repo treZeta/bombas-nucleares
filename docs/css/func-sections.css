@@ -91,24 +91,20 @@
 #section-6-func .section-text-container {
     width: 100%;
 }
-#section-6-func .section-text-container h2{
+
+#section-6-func .section-text-container h2 {
     text-align: justify;
 }
 
-#section-7-func .section-text-container h2{
+#section-7-func .section-text-container h2 {
     text-align: center;
 }
 
-#section-6-func .section-text-container h2,
-#section-6-func .section-text-container h3,
-#section-6-func .section-text-container p,
-#section-7-func .section-text-container h2,
-#section-7-func .section-text-container h3,
-#section-7-func .section-text-container a,
-#section-7-func .section-text-container p {
+#section-6-func .section-text-container h2, #section-6-func .section-text-container h3, #section-6-func .section-text-container p, #section-7-func .section-text-container h2, #section-7-func .section-text-container h3, #section-7-func .section-text-container a, #section-7-func .section-text-container p {
     color: #000000;
 }
-#section-8-func{
+
+#section-8-func {
     background: #283b4e;
 }
 
