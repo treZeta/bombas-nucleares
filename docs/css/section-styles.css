@@ -24,13 +24,13 @@
 
 .section-text-container h3 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .section-text-container p {
     font-weight: 500;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .section-text-container h2, .section-text-container h3, .section-text-container p {
@@ -53,6 +53,7 @@
 
 .section-text-container.section-with-img {
     width: 55%;
+    margin: auto;
 }
 
 .media-container i {

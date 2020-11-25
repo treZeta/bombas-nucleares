@@ -50,6 +50,7 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
     font-weight: 600;
     text-decoration: none;
     padding: 10px 0;
+    margin: auto;
 }
 
 /* Se le da un color blanco a el texto de los submenus de el li "bombas" */
@@ -86,7 +87,6 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
 .submenus-container .nav-bar__li:hover>a {
     color: #333333;
 }
-
 /* Style the subnav content - positioned absolute */
 
 .submenus-container {

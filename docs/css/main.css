@@ -7,7 +7,7 @@
 @import "button-styles.css";
 @import "index-sections.css";
 @import "func-sections.css";
-
+@import "sgm-sections.css";
 /* Se eliminan los estilos predefinidos mas importantes, se le da la fuente de texto a toda la pagina y se pone el scroll-behavior:smooth para
 que el efecto de los botones y anclas que te dirigen a un id en la misma pagina tenga un efecto suave de movimiento */
 
