@@ -1,0 +1,107 @@
+#hero-manhattan {
+    background: url('../img/manhattan/los_alamos.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+#section-hero-manhattan .section-text-container {
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    padding: 30px 0;
+}
+
+#section-hero-manhattan .section-text-container {
+    margin: auto;
+}
+
+#section-hero-manhattan .section-content {
+    height: 100%;
+    padding: 60px 0;
+}
+
+#section-hero-manhattan .section-content .section-text-container {
+    height: 100%;
+}
+
+#section-hero-manhattan .section-text-container h2, #section-hero-manhattan .section-text-container h3, #section-hero-manhattan .section-text-container p {
+    margin: 35px auto;
+    color: #ffffff;
+    border-radius: 15px;
+    background: #00000077;
+}
+
+#section-hero-manhattan .section-text-container h2 {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+#section-hero-manhattan .section-text-container h3 {
+    font-size: 25px;
+    text-align: center;
+    width: 70%;
+}
+
+#section-hero-manhattan .section-text-container p {
+    font-size: 18px;
+    text-align: justify;
+}
+#section-2-manhattan, #section-3-manhattan, #section-4-manhattan, #section-8-manhattan, #section-10-manhattan{
+    background: #ee6f57;
+}
+#section-5-manhattan, #section-6-manhattan, #section-7-manhattan, #section-9-manhattan{
+    background: #283b4e;
+}
+#section-4-manhattan .section-content{
+    display: block;
+}
+#section-4-manhattan .section-text-container{
+    width: 100%;
+}
+
+#section-4-manhattan .media-container.image-container{
+    width: 90%;    
+}
+#section-4-manhattan .section-text-container h2{
+    text-align: center;
+}
+#section-6-manhattan .section-text-container, #section-8-manhattan .section-text-container{
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    #section-5-manhattan i {
+        font-size: 180px;
+    }
+    #section-2-manhattan .section-text-container p {
+        width: 90%;
+        text-align: justify;
+        margin: 30px 15px;
+    }
+    #section-hero-manhattan .section-text-container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #section-hero-manhattan .section-text-container h3 {
+        margin: 35px;
+        font-size: 20px;
+    }
+    #section-hero-manhattan .section-text-container p {
+        color: #ffffff;
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 17px;
+    }
+    .media-container.image-container {
+        width: 85%;
+    }
+    .section-text-container h2 {
+        text-align: center;
+    }
+    #section-3-manhattan .section-text-container h2 {
+        text-align: start;
+    }
+}
