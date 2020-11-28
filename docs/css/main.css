@@ -58,3 +58,14 @@ a {
     font-weight: 800;
     color: #ffffff;
 }
+
+li.disabled, .disabled>a {
+    cursor: not-allowed;
+}
+
+.nav-bar__li.disabled:hover>a {
+    color: #333333;
+}
+.disabled{
+    cursor: not-allowed;
+}

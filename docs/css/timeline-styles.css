@@ -284,6 +284,17 @@
 .content:active {
     opacity: 1;
 }
+.disabled.content:hover {
+    opacity: .4;
+    box-shadow: none;
+}
+.disabled.content:active {
+    opacity: .4;
+    box-shadow: none;
+}
+.disabled>.content {
+    cursor: not-allowed;
+}
 @media screen and (max-width: 600px) {
     /* Place the timelime to the left */
     .timeline::after {

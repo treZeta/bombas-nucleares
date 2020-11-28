@@ -67,12 +67,7 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
     margin-left: 5px;
     position: relative;
 }
-.disabled {
-    cursor: not-allowed;
-}
-.nav-bar__li.disabled:hover>a {
-    color: #333333;
-}
+
 .sub-menu {
     display: block;
 }
@@ -98,10 +93,18 @@ para centrarla y width 100 % para que cubra todo el ancho de la pantalla */
     border-bottom-right-radius: 5px;
 }
 
+.nav-bar__li.disabled:hover>a {
+    color: #333333;
+}
+
 /* Al poner el mause sobre el .li-with-subnav, se muestra el sub menu */
 
 .div-with-subnav:hover .submenus-container, .div-with-subnav:hover>a {
     display: block;
+}
+
+.submenus-container .nav-bar__li.disabled:hover>a{
+    color: #ffffff;
 }
 @media (max-width: 700px){
     .submenus-container{
