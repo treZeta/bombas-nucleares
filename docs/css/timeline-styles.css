@@ -1,42 +1,30 @@
+/* El container en el que va todo lo ocupado por la timeline, desde el contenido, hasta los margenes*/
+
 .timeline-container {
     background: #ee6f57;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* El contenedor donde estan todos los momentos */
 
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
-.timeline a{
-    text-decoration: none;
-    color: #000000;
-}
-.content h3{
-    font-weight: 700;
-}
-.content h4{
-    font-weight: 600;
-}
-.content p{
-    font-weight: 400;
-}
+
+/* Que mas que los estilos del titulo de la timeline :v */
 
 .timeline-title {
     text-align: center;
     font-size: 35px;
     color: #ffffff;
-}
-
-.timeline-title-container h2 {
     padding: 30px;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* La verdadera linea de tiempo (timeline), osea, es la linea que va de arriba hacia abajo que tiene a los momentos a su alrededor */
 
 .timeline::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 6px;
     background-color: white;
@@ -46,7 +34,7 @@
     margin-left: -3px;
 }
 
-/* Container around content */
+/* El contenedor que envuelve a el contenido de los momentos */
 
 .container {
     padding: 10px 40px;
@@ -55,34 +43,76 @@
     width: 50%;
 }
 
-/* The circles on the timeline */
+/* Los circulos de el timeline */
 
 .container::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 25px;
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #FF9F55;
+    border: 4px solid #ff9f55;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
 }
 
-/* Place the container to the left */
+/* El contenedor en el que esta el contenido de los momentos, tal y como lo es el h3, h4 y el p */
+
+.content {
+    transition: all 1s;
+    opacity: 0.4;
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Un hover para que, cuando se pase el mouse por encima de los momentos, estos pierdan toda la transparencia y se les añada una sombra */
+
+.content:hover {
+    opacity: 1;
+    box-shadow: 0 4px 8px #00000088;
+}
+
+/* Color negro y margen entre los subtitulos y parrafos de los momentos */
+
+.content h3,
+.content h4,
+.content p {
+    margin: 10px 0;
+    color: #000000;
+}
+
+/* Se le da el tamaño y la anchura a la fuente de cada etiqueta que hay dentro de los momentos */
+
+.content h3 {
+    font-weight: 700;
+    font-size: 28px;
+}
+.content h4 {
+    font-weight: 600;
+    font-size: 22px;
+}
+.content p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Una clase utilizada para poner el container a la izquierda de la timmeline */
 
 .left {
     left: 0;
 }
 
-/* Place the container to the right */
+/* Una clase utilizada para poner el container a la derecha de la timmeline */
 
 .right {
     left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
+/* Añade una flecha a los containers que se encuentran en la izquierda, esta flecha va pegada al content y apunta a la derecha */
 
 .left::before {
     content: " ";
@@ -97,7 +127,7 @@
     border-color: transparent transparent transparent white;
 }
 
-/* Add arrows to the right container (pointing left) */
+/* Añade una flecha a los containers que se encuentran en la derecha, esta flecha va pegada al content y apunta a la izquierda */
 
 .right::before {
     content: " ";
@@ -112,38 +142,22 @@
     border-color: transparent white transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
+/* Hace que los circulos del timeline que tiene cada container, se visualizen bien */
 
 .right::after {
     left: -16px;
 }
 
-/* The actual content */
+/* Estilos para que el .content que tenga .disabled, no vaya a tomar los estilos de enfoque que tienen el resto de .content's */
 
-.content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
+.disabled.content:hover {
+    opacity: 0.4;
+    box-shadow: none;
 }
 
-.content h3, .content h4, .content p {
-    margin: 10px 0;
+.disabled > .content {
+    cursor: not-allowed;
 }
-
-.content h3 {
-    font-size: 28px;
-}
-
-.content h4 {
-    font-size: 22px;
-}
-
-.content p {
-    font-size: 18px;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
     /* Place the timelime to the left */
@@ -164,157 +178,8 @@
         border-color: transparent white transparent transparent;
     }
     /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-        left: 15px;
-    }
-    /* Make all right containers behave like the left ones */
-    .right {
-        left: 0%;
-    }
-}
-
-/* The actual timeline (the vertical ruler) */
-
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-}
-
-/* Container around content */
-
-.container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-/* The circles on the timeline */
-
-.container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-/* Place the container to the left */
-
-.left {
-    left: 0;
-}
-
-/* Place the container to the right */
-
-.right {
-    left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-
-.right::after {
-    left: -16px;
-}
-
-/* The actual content */
-
-.content {
-    transition: all 1s;
-    opacity: .4;
-    padding: 20px 30px;
-    background-color: #ffffff;
-    position: relative;
-    border-radius: 6px;
-}
-
-.content:hover {
-    opacity: 1;
-    box-shadow: 0 4px 8px #00000088;
-}
-.content:active {
-    opacity: 1;
-}
-.disabled.content:hover {
-    opacity: .4;
-    box-shadow: none;
-}
-.disabled.content:active {
-    opacity: .4;
-    box-shadow: none;
-}
-.disabled>.content {
-    cursor: not-allowed;
-}
-@media screen and (max-width: 600px) {
-    /* Place the timelime to the left */
-    .timeline::after {
-        left: 31px;
-    }
-    /* Full-width containers */
-    .container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-    /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-        left: 60px;
-        border: medium solid #ffffff;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent #ffffff transparent transparent;
-    }
-    /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
+    .left::after,
+    .right::after {
         left: 15px;
     }
     /* Make all right containers behave like the left ones */
